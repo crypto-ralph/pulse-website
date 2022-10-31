@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Pulsechain Projects Guide</title>
+      <meta name="description" content="">
+      <!---meta name="viewport" content="width=device-width, initial-scale=1"---->
+      <link rel="icon" href="/favicon.png">
+      <link rel="apple-touch-icon" href="../icon.png">
+	  
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='icons/icomoon.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='icons/fontawesome-all.min.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/pluginsx.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/swiper.min.css') }}">
+   </head>
+   <body>
+      <!-- Page Content START -->
+      <div class="page-content">
+         <!-- Home Section START -->
+         <section id="home-sec" class="main-banner parallax">
+            <div class="bg-lefts"></div>
+            <div id="nav" class="container">
+               <div class="row">
+                  <div class="col-lg-9">
+                     <!-- Swiper -->
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide" data-hash="slide1">
+                              <div class="col-md-6">
+                                 <span class="img-ste1"></span>
+                              </div>
+                              <div class="col-md-6">
+                                 <h3 class="name-intro">PulseInfo</h3>
+                                 <span class="hr-intro"></span>
+                                 <p class="docopation-intro">
+                                    Your ultimate guide to PulseChain projects.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="swiper-slide" data-hash="slide2">
+                              <div class="col-md-6">
+                                 <span class="img-ste1"></span>
+                              </div>
+                              <div class="col-md-6">
+                                 <h3 class="name-intro">PUBG</h3>
+                                 <span class="hr-intro"></span>
+                                 <p class="docopation-intro">
+                                    Встречайте новая мини-игра <br>
+                                    PUBG теперь и в майнкрафте.
+                                 </p>
+                                 <a href="#" class="btn-drop"><span class="ic-sx22"></span>Visit</a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide" data-hash="slide3">
+                              <div class="col-md-6">
+                                 <span class="img-ste1"></span>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="name-intro">PulseX Sacrifice Check</h2>
+                                 <span class="hr-intro"></span>
+                                 <p class="docopation-intro">
+                                    Check if you're eliglible to get tokens on pulsexlead.
+                                 </p>
+                                 <a href="https://pulsexlead.com/" target="_blank" class="btn-drop"><span class="ic-sx22"></span>pulsexlead.com</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <a href="https://pulsechain.com/" class="block-s1">
+                        <p class="how-to-games">Pulsechain Home</p>
+                        <p class="desctops">Main website of the PulseChain project</p>
+                     </a>
+                     <a href="https://pulsex.com/" class="block-s1 p2">
+                        <p class="how-to-games">PulseX Home</p>
+                        <p class="desctops">Main website of the PulseX project</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Home Section END -->
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9 col-md-9">
+                  {% for project in projects %}
+                  <div class="project">
+                     {% if project.logo %}
+                     <img class="poster" src="{{ url_for('static', filename='proj_img/') }}{{project.logo}}" />
+                     {% endif %}
+                     {% if project.is_hot %}
+                     <span class="hot-project">HOT</span>
+                     {% endif %}
+                     <h3 class="news-log">{{ project.name }}</h3>
+                     <p class="description">
+                        {{ project.description }} <br>
+                     </p>
+                     <b><span style="color: black">contract:</span></b>  {{ project.contract }} <br><br>
+                     <span style="color: black">Media:</span><br>
+                     {% if project.media.website %}
+                     <a href="{{ project.media.website }}" target="_blank">website</a>
+                     {% endif %}
+                     {% if project.media.twitter %}
+                     |  <a href="{{ project.media.twitter }}">twitter</a>
+                     {% endif %}
+                     {% if project.media.telegram %}
+                     |  <a href="{{ project.media.telegram }}">telegram</a>
+                     {% endif %}
+                     {% if project.media.discord %}
+                     |  <a href="{{ project.media.discord }}">discord</a>
+                     {% endif %}
+                  </div>
+                  {% endfor %}
+
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      {% if request.args.get('page') not in ('1', None) %}
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      {% endif %}
+                      {% for n in range(num_of_pages) %}
+                      <li class="page-item"><a class="page-link" href="?page={{ n + 1 }}">{{ n + 1}}</a></li>
+                      {% endfor %}
+                      {% if request.args.get('page') != num_of_pages|string %}
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                       {% endif %}
+                    </ul>
+                  </nav>
+               </div>
+               <div class="col-lg-3 col-md-3">
+                  <div class="right-block">
+                     <div class="n-m">Official Media</div>
+                     {% for media in media_links %}
+                     <div class="media-item">
+                        <a href="{{ media.link }}" target="_blank">
+                           <img class="media-ico" src="{{ url_for('static', filename='icons/') }}{{ media.img }}">
+                           {{ media.text }}
+                        </a>
+                     </div>
+                     {% endfor %}
+                  </div>
+                  <div class="right-block vk">
+                     <div class="n-m">Exchange Links</div>
+                     <div class="widget-vk">
+                        WIDGET VK
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         <!-- Footer START -->
+         <footer class="section site-footer bg-dark">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-2 col-md-2">
+                  </div>
+                  <div class="col-lg-6 col-md-6 text-center">
+                     <p class="footer-text">© PulseChain Projects 2022 - All rights reserved.</p>
+                  </div>
+                  <div class="col-md-4">
+                     <ul class="ft-nav social-nav my-3">
+                        <li class="mx-1"><a href="javascript:void(0);" title="vk"><i class="fa fa-vk"></i></a></li>
+                        <li class="mx-1"><a href="javascript:void(0);" title="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li class="mx-1"><a href="javascript:void(0);" title="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li class="mx-1"><a href="javascript:void(0);" title="instagram"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                     <a href="http://larts.pro/">
+                     <span class="corp-design"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- Footer END -->
+      </div>
+      <!-- Page Content END -->
+
+      <script src="{{ url_for('static', filename='dist/js/swiper.min.js') }}"></script>
+      <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper('.swiper-container', {
+           spaceBetween: 30,
+           hashNavigation: {
+             watchState: true,
+           },
+           pagination: {
+             el: '.swiper-pagination',
+             clickable: true,
+           },
+           navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+           },
+         });
+      </script>
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/pluginsx.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+   </body>
+</html>

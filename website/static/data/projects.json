@@ -1,0 +1,776 @@
+{
+        "projects": [
+            {
+                "name": "AcriaNetwork",
+                "Website": "https://acria.network/",
+                "Twitter": "https://twitter.com/acrianetwork",
+                "description": "One of the most pressing issues when developing smart contracts is the lack of real-world data. But due to technical limitations, such as the consensus protocol, no blockchain has been able to solve this major limitation. The Acria Network solves exactly this problem with the help of so-called Oracle Nodes that don't require a middleman. In addition to this, it offers cross-chain support to supply various blockchains with real-world data.",
+                "text": ""
+            },
+            {
+                "name": "AirDAO",
+                "Website": "https://airdao.app/",
+                "Twitter": "https://twitter.com/pulseairdao",
+                "Telegram": "https://t.me/+yE3vMwyR7T1mYTFk",
+                "text": "Web site created using create-react-app"
+            },
+            {
+                "name": "AlphaSwap",
+                "Website": "https://www.alphaswap.pl/",
+                "Twitter": "https://mobile.twitter.com/alphaswapdex",
+                "Telegram": "https://t.me/AlphaSwapDex"
+            },
+            {
+                "name": "ArkKit",
+                "Website": "https://artkit.art/",
+                "Twitter": "https://twitter.com/artkit_art",
+                "Telegram": "https://t.me/artkitofficial",
+                "text": "ArtKit is the leading decentralised multi-chain NFT marketplace, bridging the gap between social media,\r\n      NFT, Metaverse and walk to earn."
+            },
+            {
+                "name": "Aqua Protocol",
+                "Website": "https://aquaprotocol.io/",
+                "Twitter": "https://twitter.com/aquaprotocol?s=11&t=FBpCJ-MplCM-d_u7OX_o4w",
+                "Telegram": "https://t.me/+vheTCJi9ByY5NzQx",
+                "text": ""
+            },
+            {
+                "name": "BankX",
+                "Website": "https://bankx.io/",
+                "Twitter": "https://twitter.com/bankxio",
+                "Telegram": "https://t.me/BankXio",
+                "text": "A Silver-Pegged, Crypto-Backed Stablecoin That Pays You Interest.",
+                "description": "BankX brings a dual token, partially collateralized, \n                        partially algorithmic stablecoin to decentralized finance. \n                        The stablecoin is the first to pay you interest for minting while it is in \n                        circulation while never being at risk of liquidation. \n                        It has many attributes of the legacy centralized banking system but is \n                        designed to benefit the individual. The protocol includes a decentralized \n                        approach to the Certificate of Deposit used in traditional banking today. \n                        It also employs a “Protocol Owned Liquidity” model.\")"
+            },
+            {
+                "name": "BearX",
+                "Website": "https://bearx.pro/",
+                "text": ""
+            },
+            {
+                "name": "BeetRoot",
+                "Website": "https://www.beetroot.world/",
+                "Twitter": "https://twitter.com/BEETroot___",
+                "Telegram": "https://t.me/BEETrootChat",
+                "text": "BEETroot Privacy hub, the Swiss army knife of cryptocurrency privacy tools. Stay anonymous and always keep custody of your private keys when exchanging, swapping, bridging and ramping to fiat. Everything you need under one roof. Fees go towards buy back and burn of BEET."
+            },
+            {
+                "name": "Board Token",
+                "Twitter": "https://twitter.com/PhaseSacrifice",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "ChadInu",
+                "Website": "https://www.chadinu.io/",
+                "Twitter": "https://twitter.com/chadinu_io",
+                "Telegram": "https://t.me/chadinu_io",
+                "text": "Chad Inu is a Web3 networking and entertainment Club using the native $CHAD token. \u00f0\u009f\u0094\u00a5"
+            },
+            {
+                "name": "CryptoSaveNature",
+                "Twitter": "https://twitter.com/HexPLSaveNature",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "CultDao",
+                "Website": "https://cultdao.io/",
+                "Twitter": "https://twitter.com/wearecultdao",
+                "Telegram": "https://t.me/cultdaothemany",
+                "text": "The purpose of CULT.DAO is to empower and fund those building and contributing towards our decentralized future."
+            },
+            {
+                "name": "DAXE Token",
+                "Website": "https://daxetoken.net/",
+                "Twitter": "https://twitter.com/daxetoken/",
+                "Telegram": "https://t.me/daxetoken",
+                "text": ""
+            },
+            {
+                "name": "DecentralizeX",
+                "Website": "https://decentralizex.com/",
+                "Twitter": "https://twitter.com/DTXcrypto",
+                "Telegram": "https://t.me/DTXcrypto",
+                "text": "DecentralizeX is a trustless time-deposit(CD) DAO. On-chain trustless interest, governance, oracles integration, token burns, reward boost events, NFT staking, virtual land and more!"
+            },
+            {
+                "name": "Defi Bids",
+                "Website": "https://defibids.com/",
+                "Twitter": "https://twitter.com/defibids",
+                "Telegram": "https://t.me/defibids",
+                "text": ""
+            },
+            {
+                "name": "DegenProtocol",
+                "Website": "https://degenprotocol.io/",
+                "Twitter": "https://twitter.com/Degen__Protocol",
+                "Telegram": "https://t.me/Degen_Protocol",
+                "text": ""
+            },
+            {
+                "name": "DexTop",
+                "Website": "https://dextop.pro/",
+                "text": ""
+            },
+            {
+                "name": "DogeyInu",
+                "Website": "https://dogeyinu.com/",
+                "Twitter": "https://twitter.com/dogey_inu",
+                "Current Price": "https://nomics.com/assets/dinu-dogey-inu",
+                "text": "Defi Community Cryptocurrency Experiment"
+            },
+            {
+                "name": "Dognut",
+                "Website": "https://www.dognut.wtf/",
+                "Telegram": "https://t.me/pulsepupmemecoin",
+                "text": "Dognut dog coin is creating a community of DNUT that will be fur-ever freinds. \nLet's send Deez Dognuts to the bark side of the moon"
+            },
+            {
+                "name": "DTX Crypto",
+                "Website": "https://decentralizex.com/",
+                "Twitter": "https://twitter.com/DTXcrypto",
+                "Telegram": "https://t.me/DTXcrypto",
+                "text": "DecentralizeX is a trustless time-deposit(CD) DAO. On-chain trustless interest, governance, oracles integration, token burns, reward boost events, NFT staking, virtual land and more!"
+            },
+            {
+                "name": "Emp Money",
+                "Website": "https://emp.money/",
+                "Twitter": "https://twitter.com/empmoneybsc",
+                "Telegram": "https://t.me/empmoney",
+                "text": "Emp Money | ETH pegged algocoin"
+            },
+            {
+                "name": "Equinox Token ",
+                "Website": "https://eqnox-token.com/#/",
+                "Telegram": "https://t.me/eqnox_token",
+                "text": "NOX is a certificate of deposit token that was designed to grow, with stakes that can last forever, and share rates that only go up"
+            },
+            {
+                "name": "FarmX",
+                "Website": "https://farmx.land/",
+                "Twitter": "https://twitter.com/YieldFarmX",
+                "Telegram": "https://t.me/farmXTG",
+                "text": "PulseChain Yield Farming"
+            },
+            {
+                "name": "FlokiPulse",
+                "Website": "https://www.flokipulse.win/",
+                "Twitter": "https://twitter.com/flokipulse"
+            },
+            {
+                "name": "Freepulse.io",
+                "Website": "https://FreePulse.io?r=pWV2LS",
+                "Twitter": "https://twitter.com/FreePulseio",
+                "Telegram": "https://t.me/FreePulse",
+                "text": "FreePulse.io - Claim up to $200 of free PLS every hour!"
+            },
+            {
+                "name": "Futura",
+                "Twitter": "https://twitter.com/futura_build",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "Genuis Token",
+                "Website": "https://geniustoken.com/",
+                "Twitter": "https://twitter.com/Genicrypto",
+                "Telegram": "http://t.me/GeniCrypto",
+                "text": "Genius is the first hyper-yield A.I. blockchain Certificate of Deposit staking token designed to increase in value over time. Genius will be used by end users to generate passive income and has been designed to mitigate human corruption and biased bureaucracy."
+            },
+            {
+                "name": "Gollaverse",
+                "Telegram": "https://t.me/GOLLAVERSE",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "HeartbeatToken",
+                "Twitter": "https://twitter.com/HeartbeatToken",
+                "Telegram": "https://t.co/Oht4KqOCew",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "Hedron.Pro",
+                "Website": "https://hedron.pro/#/",
+                "Twitter": "https://twitter.com/HedronCrypto",
+                "Telegram": "https://t.me/HedronCrypto",
+                "text": "Make the most of your HEX stakes! Staking HEX now allows you to mint HDRN tokens, use HEX stakes as collateral, and trade HEX stakes as NFT's!"
+            },
+            {
+                "name": "Hedron",
+                "Website": "https://t.co/2F8dO2x7di",
+                "Twitter": "https://twitter.com/HedronCrypto",
+                "Telegram": "https://t.co/Gu1LmCnEo1",
+                "text": "Make the most of your HEX stakes! Staking HEX now allows you to mint HDRN tokens, use HEX stakes as collateral, and trade HEX stakes as NFT's!"
+            },
+            {
+                "name": "Helgo",
+                "Website": "https://helgo.io/",
+                "Telegram": "https://t.me/helgoio",
+                "text": ""
+            },
+            {
+                "name": "HexicanCoin",
+                "Website": "https://www.hexican.pro/",
+                "Twitter": "https://twitter.com/HEXICANcoin",
+                "text": ""
+            },
+            {
+                "name": "HexMarket",
+                "Website": "https://hexmarket.com/homepage",
+                "Telegram": "https://t.me/hexmarketplace",
+                "text": "HexMarket"
+            },
+            {
+                "name": "HexTrack",
+                "Website": "https://hextrack.app/",
+                "Telegram": "https://twitter.com/hextrackapp",
+                "text": "Hextrack is a Pulsechain portfolio tracker. Monitor coin positions and analyze your profit and loss for tokens listed on the PulseX exchange. Start by making an account to keep track of your daily weekly monthly and yearly performance stats. PRC20's are supported.'"
+            },
+            {
+                "name": "Hocus Pocus",
+                "Website": "https://www.hocuspocus.finance/",
+                "Twitter": "https://twitter.com/HocusPocusFi",
+                "Telegram": "https://t.co/Pp6ZHIZCr2",
+                "text": ""
+            },
+            {
+                "name": "HoneyBees",
+                "Website": "https://honeybees.com/",
+                "text": ""
+            },
+            {
+                "name": "Hurricash",
+                "Website": "https://hurricash.com/",
+                "Twitter": "https://twitter.com/hurricash",
+                "text": "Web site created using create-react-app"
+            },
+            {
+                "name": "Iketswap",
+                "Website": "https://iketswap.com/",
+                "Twitter": "https://twitter.com/IkeToken",
+                "Telegram": "https://t.me/iketokenlaunch",
+                "text": ""
+            },
+            {
+                "name": "Impulse",
+                "Website": "https://impulse.money/",
+                "Twitter": "https://twitter.com/impulse_money",
+                "Telegram": "https://t.me/impulse_money",
+                "text": "Web site created using create-react-app"
+            },
+            {
+                "name": "Inpulsex",
+                "Website": "https://inpulsex.io/",
+                "Twitter": "https://twitter.com/InpulseX_io",
+                "Telegram": "https://t.me/InpulseX_Official",
+                "text": ""
+            },
+            {
+                "name": "InternetMoney",
+                "Website": "http://imcrypto.net/",
+                "Twitter": "https://twitter.com/imcryptonet",
+                "text": ""
+            },
+            {
+                "name": "InvestDex",
+                "Website": "https://investdex.io/",
+                "Twitter": "https://twitter.com/InvestDexio",
+                "Telegram": "https://t.me/Investdex",
+                "text": "InvestDex App"
+            },
+            {
+                "name": "KiraToken",
+                "Website": "https://www.kiratoken.com/",
+                "Twitter": "https://twitter.com/kiratokencom",
+                "Telegram": "https://t.me/kiratokencom",
+                "text": "KIRA is a safe and simple, token for PulseChain. Buy, Sell, Send, Receive. \r\nWith simple design parameters, low failure risk, and complete \r\ndecentralization, KIRA is deployed as an autonomous probe to data mine the \r\nPulseChain."
+            },
+            {
+                "name": "KhaosVerse",
+                "Website": "https://www.khaosverse.com/",
+                "Twitter": "https://twitter.com/khaosverse",
+                "Telegram": "https://t.me/KhaosVerse",
+                "eview of KhaosVerse": "https://pulse-chain.com/2021/11/21/introducing-khaosverse-a-future-pulsechain-token-bridge-liquidity-provider/",
+                "text": "Khaos Verse is the first bridge between ERC-20 and PulseChain Network. We provide the lowest crypto swap fees fully decentralised made by the people."
+            },
+            {
+                "name": "Lethayus",
+                "Website": "https://www.lethayus.com/",
+                "Twitter": "https://twitter.com/lethayus",
+                "Telegram": "https://t.me/lethayus",
+                "text": "The World of Lethayus is a first-of-its-kind Comic Book NFT that is being written and curated by a community DAO. Bringing together the power of story telling, illustration, and the NFT community we are creating a comic book series that tells the story of Cryptocurrency in a medieval \"Game of Thrones\" setting. We are storytellers, comic book artists, designers, and crypto enthusiasts creating a global community with the power of storytelling and original hand drawn art."
+            },
+            {
+                "name": "Liquidloans",
+                "Website": "http://www.liquidloans.io",
+                "Twitter": "https://twitter.com/liquidloansio",
+                "Telegram": "https://t.co/ZfolMYkGTE",
+                "review of LiquidLoans": "https://pulse-chain.com/2021/10/17/liquid-loans-will-launch-on-pulsechain-heres-what-we-know-so-far/",
+                "text": "\u00e2\u009c\u0093 0% Interest-Free \u00e2\u009c\u0093 Algorithmic Stablecoin \u00e2\u009c\u0093 Immutable \u00e2\u009c\u0093 Governance-Free \u00e2\u009c\u0093 No Admin Keys"
+            },
+            {
+                "name": "Love.io \u2013",
+                "Website": "https://love.io/",
+                "Twitter": "https://twitter.com/LovePulseChain",
+                "Telegram": "https://t.me/loveiocommunity",
+                "text": "Love.io"
+            },
+            {
+                "name": "Mad.Energy",
+                "Website": "https://mad.energy/",
+                "Twitter": "https://twitter.com/MADthefuture"
+            },
+            {
+                "name": "Meme Coin City",
+                "Website": "https://www.memecoincity.com/",
+                "Twitter": "https://twitter.com/MemeCoinCity",
+                "Telegram": "https://t.me/+t3cex4NDYiE2ZjU0",
+                "text": "Meme Coin Collection  , DEX trading , NFT collection on Ethereum PoW, Meme Coin Mafia , $MEME"
+            },
+            {
+                "name": "Merkle Network",
+                "Websit": "https://merkle.network/",
+                "Twitter": "https://twitter.com/merklenetwork",
+                "Telegram": "https://t.me/merkleNetwork",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "Mintra ",
+                "Website": "https://www.mintra.io/",
+                "Twitter": "https://twitter.com/Mintraio",
+                "Telegram": "https://t.me/MintraOfficial",
+                "text": "Mintra is the greenest NFT marketplace. Powered by Pulsechain. "
+            },
+            {
+                "name": "MoreToken",
+                "Twitter": "http://twitter.com/buymoretokens",
+                "Telegram": "http://t.me/buymoretokens",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "Newell Tech",
+                "Website": "https://www.newelldigitalholdings.com/",
+                "Twitter": "http://twitter.com/newell_tec",
+                "text": ""
+            },
+            {
+                "name": "NFTonPulse",
+                "Twitter": "https://twitter.com/nftonpulse",
+                "Telegram": "https://t.me/nftonpulse",
+                "text": "Project currently has no website."
+            },
+            {
+                "name": "NosignalNFT",
+            "Website": "https://nosignal-nft.xyz/",
+            "Twitter": "https://twitter.com/nosignal_PLSNFT",
+            "Telegram": "http://t.me/nosignal_plsnft",
+            "text": ""
+        },
+        {
+            "name": "Oasis Exchange",
+            "Telegram": "https://t.me/oasisexchange",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "OurGlass",
+            "Website": "https://ourglass.io/",
+            "Twitter": "https://twitter.com/ourdotglass",
+            "text": "$GLASS powers a revolutionary staking platform. It utilizes a specialized RFI Token structure\r\n    enabling infinite staking pool rewards, all while maintaining a fixed deflationary supply."
+        },
+        {
+            "name": "PHIAT ",
+            "Website": "https://phiat.io/",
+            "Twitter": "https://twitter.com/phiatcrypto",
+            "Telegram": "https://t.me/+_2BI2i6MFtg1N2I9",
+            "text": "A DeFi Bank on Pulsechain"
+        },
+        {
+            "name": "PLSNFT",
+            "Website": "https://plsnft.io/",
+            "Twitter": "https://twitter.com/PLS_NFT",
+            "Telegram": "https://t.me/PLSNFT",
+            "text": ""
+        },
+        {
+            "name": "Plspeak",
+            "Website": "https://plspeak.com/",
+            "Twitter": "https://twitter.com/Plspeakcom",
+            "Telegram": "https://t.me/plspeakcom",
+            "text": ""
+        },
+        {
+            "name": "Plxswap",
+            "Website": "https://t.co/eCrokDEvOK",
+            "Twitter": "https://twitter.com/Plxswap",
+            "Telegram": "https://t.co/w03Yv6Lvku"
+        },
+        {
+            "name": "PoorPleb",
+            "Website": "https://poorpleb.win/",
+            "Twitter": "https://twitter.com/poorplebwin",
+            "Telegram": "https://t.me/poorplebwin",
+            "text": ""
+        },
+        {
+            "name": "Powercitydao",
+            "Twitter": "https://twitter.com/powercitydao",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "Powercity",
+            "Twitter": "https://twitter.com/POWERCITYio",
+            "Telegram": "https://t.co/AqJedg0fHh",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "PulseX",
+            "Website": "https://pulsex.com/",
+            "Twitter": "https://twitter.com/PulseXcom",
+            "Telegram": "https://t.me/PulseXcom",
+            "text": "Richard Heart's Uniswap fork with PLSX Liquidity Provider incentivization"
+        },
+        {
+            "name": "PulseBet",
+            "Telegram": "https://t.me/pulsebet_official",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "SYNC Network",
+            "Website": "https://syncbond.com/",
+            "Twitter": "https://twitter.com/SYNCTOKEN",
+            "Telegram": "https://t.me/SYNC_NETWORK",
+            "review of SYNC Network": "https://pulse-chain.com/2021/10/25/sync-network-and-their-cryptobond-nfts-is-coming-to-pulsechain/",
+            "text": "Like Cryptokitties, these tradable, collectible NFTs store uniswap liquidity pool tokens and mint rewards in SYNC token when they mature. Whoever holds the CryptoBond can cash it out on maturity."
+        },
+        {
+            "name": "Pulse Kuma DAO",
+            "Twitter": "https://twitter.com/PulseKuma",
+            "Telegram": "https://t.me/pKumaOfficial",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "Pulse33",
+            "Website": "https://pulse33.com/",
+            "Twitter": "https://twitter.com/Pulse33com",
+            "Telegram": "https://t.me/Pulse33com",
+            "text": "Pulse33.com IS THE BEST MEME COIN ON PULSECHAIN!"
+        },
+        {
+            "name": "Pulse AirDAO",
+            "Website": "https://airdao.app/",
+            "Twitter": "https://twitter.com/pulseairdao",
+            "Telegram": "https://t.me/+yE3vMwyR7T1mYTFk",
+            "text": "Web site created using create-react-app"
+        },
+        {
+            "name": "PulseChimp",
+            "Website": "https://t.co/B6mD3vka1m",
+            "Twitter": "https://twitter.com/PulseChimp",
+            "Telegram": "https://t.co/V4INoGgzq1",
+            "text": ""
+        },
+        {
+            "name": "PulseDogeCoin",
+            "Website": "https://pulsedogecoin.com/",
+            "Twitter": "https://twitter.com/hexinfo",
+            "Telegram": "https://t.me/PLSDcoin",
+            "text": "PulseDogecoin cryptocurrency aims to redefine the value and scarcity of memecoins. FREE claimed PLSD coins to the Strongest crypto Holders in the World, HEX Stakers!"
+        },
+        {
+            "name": "PulseDogElon",
+            "Website": "https://pulsedogelon.com/",
+            "Twitter": "https://twitter.com/PulseDogElon",
+            "Current Price": "https://thebittimes.com/coin-PELON-BSC.html",
+            "text": "PulseDogElon ($PELON) is a community meme token on Binance Smart Chain"
+        },
+        {
+            "name": "PulseDoge.Exchange",
+            "Website": "https://pulsedoge.exchange/",
+            "Twitter": "https://twitter.com/ForeignSociety_",
+            "Telegram": "https://t.co/538FJPKgZ2",
+            "text": ""
+        },
+        {
+            "name": "PulseDogeMoney",
+            " Website": "https://t.co/QZfAQXy5ND",
+            "Twitter": "https://twitter.com/pulsedogemoney",
+            "Telegram": "https://t.co/yEkZTvoBgQ",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "Pulsedoge",
+            "Website": "https://pulsedoge.win/",
+            "Twitter": "https://twitter.com/PulsedogeWin",
+            "Telegram": "https://t.co/mC4pXlDNTo",
+            "text": ""
+        },
+        {
+            "name": "PulseFEG",
+            "Website": "https://pulsefeg.finance/",
+            "Twitter": "https://twitter.com/pulsefeg",
+            "Telegram": "https://t.me/pulsefegfinance",
+            "Current Price": "https://nomics.com/assets/pulsefeg-pulsefeg"
+        },
+        {
+            "name": "PulseFloki",
+            "Website": "https://pulsefloki.com/",
+            "Twitter": "https://twitter.com/pulsefloki",
+            "Telegram": "https://t.me/PulseFlokicom",
+            "Current Price": "https://nomics.com/assets/pulsefloki-pulsefloki"
+        },
+        {
+            "name": "Pulse Gamma",
+            "Website": "https://pulsegamma.com/",
+            "Twitter": "https://twitter.com/PulseGammaRay",
+            "Telegram": "https://t.me/PulseGamma",
+            "text": ""
+        },
+        {
+            "name": "Pulsehearts",
+            "Website": "http://lovecointoken.com",
+            "Twitter": "http://twitter.com/pulseheartswin",
+            "text": ""
+        },
+        {
+            "name": "PulseLN",
+            "Website": "https://www.pulseln.com/",
+            "Twitter": "https://twitter.com/PulseLN",
+            "Telegram": "https://t.me/PulseLN",
+            "text": "Instant PLS, BTC, BNB, and HEX Swap on PulseChain, an Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork"
+        },
+        {
+            "name": "PulseLink",
+            "Website": "https://www.pulsechainoracle.com/",
+            "Twitter": "https://twitter.com/Pulselinkoracle",
+            "text": ""
+        },
+        {
+            "name": "Pulselorian",
+            "Website": "https://pulselorian.com/",
+            "Twitter": "https://twitter.com/ThePulseLorian",
+            "Telegram": "https://t.me/ThePulselorian",
+            "text": ""
+        },
+        {
+            "name": "Pulsemarkets",
+            "Website": "https://www.pulsemarkets.org/",
+            "Twitter": "https://twitter.com/pulsemarkets",
+            "Telegram": "https://t.me/pulsemarkets",
+            "text": "Decentralized Prediction Markets"
+        },
+        {
+            "name": "PulseMoon",
+            "Website": "https://pulsemoon.io/",
+            "Twitter": "https://twitter.com/pulsemoon2",
+            "Telegram": "https://t.me/pulsemoon81",
+            "text": "$PulseMoon is a community token launched fairly on Binance Smart Chain (BSC) with the intention of onboarding users from there to the upcoming PulseChain launch. Users holding $PulseMoon on BSC will receive an equal, 1:1 ratio, airdrop on PulseChain once we have deployed the token on that chain. This means you will have double the amount of tokens, because they will exist independently on each chain (BSC + PulseChain) Once on PulseChain, PulseMoon holders will enjoy new features and use cases as we develop the project further. The PulseMoon CEO Laz is inspired by Richard Heart, and his projects Hex, pulseX and PulseChain. PulseChain is going to be the peoples Chain, PulseX the peoples swap, Hex the peoples token and Pulsemoon the peoples ecosystem with a meme aspect."
+        },
+        {
+            "name": "PulseOG",
+            "Website": "https://pulseog.com/",
+            "Twitter": "https://twitter.com/pulseogdotcom",
+            "Telegram": "https://t.me/PulseOGChat",
+            "text": ""
+        },
+        {
+            "name": "Pulse Oracle",
+            "Website": "https://www.pulsechainoracle.com/",
+            "Twitter": "https://twitter.com/PulseLinkOracle",
+            "text": ""
+        },
+        {
+            "name": "Pulse Oxygen",
+            "Website": "https://pulseoxygen.info/",
+            "Twitter": "https://twitter.com/PulseOxygen",
+            "Telegram": "https://t.me/pulseoxygen",
+            "text": ""
+        },
+        {
+            "name": "PulsePad ",
+            "Website": "https://pulsepad.io/",
+            "Twitter": "https://twitter.com/Pulsepad_app",
+            "Telegram": "https://t.me/pulsepadann",
+            "Current Price": "https://nomics.com/assets/plspaderc20-pulsepad-erc-20",
+            "text": ""
+        },
+        {
+            "name": "PulsePoggers",
+            "Twitter": "https://twitter.com/pulsepoggers",
+            "Telegram": "https://t.co/4Sa8G3IdHm",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "Pulse Pot",
+            "Website": "https://pulsepot.io/",
+            "Twitter": "https://twitter.com/PulsePot",
+            "Telegram": "https://t.me/pulsepot"
+        },
+        {
+            "name": "Pulseramp",
+            "Website": "http://www.pulseramp.com",
+            "text": "PulseChain's Decentralized Bridge for tranfering assets from other blockchain networks to PulseChain."
+        },
+        {
+            "name": "PulseRing X",
+            "Website": "https://www.pulseringx.com/",
+            "Twitter": "https://twitter.com/PulseRingX",
+            "Telegram": "http://t.me/PulseRingX_launch",
+            "text": "Innovative PulseChain Solutions for the Crypto Marketplace  PulseRing.com"
+        },
+        {
+            "name": "PulseShib",
+            "Website": "https://pulseshib.com/",
+            "Twitter": "https://twitter.com/Pulseshib",
+            "Telegram": "https://www.t.me/pulseshib",
+            "text": ""
+        },
+        {
+            "name": "PulseSwap",
+            "Website": "https://www.pulsechainswap.org/",
+            "Twitter": "https://twitter.com/PulsechainSwap"
+        },
+        {
+            "name": "Pulsestar",
+            "Website": "https://t.co/FyzCPVbtB7",
+            "Twitter": "https://twitter.com/pulsestar_token",
+            "Telegram": "https://t.co/oljgmnaLFD"
+        },
+        {
+            "name": "PulseVerse",
+            "Website": "https://pulseverse.io/",
+            "Twitter": "https://twitter.com/Pulseverse_io",
+            "Telegram": "https://t.me/PulseVerse",
+            "text": ""
+        },
+        {
+            "name": "Ray Dex",
+            "Website": "https://t.co/tsiMr8XSUq",
+            "Twitter": "https://twitter.com/RayDexCrypto",
+            "text": "Swap, Stake, Farm, Lend, Vote and Borrow cryptocurrency assets on PulseChain. Our ambition is to serve the PulseChain and Hex community at the frontiers of DeFi by innovating, building fast and most importantly, building securely."
+        },
+        {
+            "name": "ReflHEXion",
+            "Website": "https://www.reflhexion.com/",
+            "Twitter": "https://twitter.com/reflhexion",
+            "Telegram": "https://t.me/reflhexion",
+            "text": ""
+        },
+        {
+            "name": "Rentomania",
+            "Website": "https://rentomania.online/",
+            "Twitter": "https://twitter.com/rentomaniagame",
+            "Telegram": "https://t.me/RentomaniaGame",
+            "text": "Welcome to the modern multiplayer online game Rentomania, which takes its origins from the original Monopoly, powered with blockchain technology! We are releasing our own Tokens soon based on Pulsechain smart contracts."
+        },
+        {
+            "name": "RichardsNFT",
+            "Website": "https://richardsnft.io/",
+            "Twitter": "https://twitter.com/Richardsnft",
+            "Telegram": "https://t.me/joinchat/nf66Rn3IuaM1NGQ0",
+            "text": ""
+        },
+        {
+            "name": "RhythmDAO",
+            "Twitter": "https://twitter.com/rythmdao",
+            "Discord": "https://t.co/wPBHM3Cx8m",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "SacrificeGames",
+            "Website": "https://sacrificegames.xyz/",
+            "Telegram": "https://t.me/sacrificegames"
+        },
+        {
+            "name": "Schrodinger",
+            "Website": "https://www.schrodingertoken.com/",
+            "Twitter": "https://twitter.com/dingertoken",
+            "Telegram": "https://t.me/dingertoken",
+            "Current Price": "https://nomics.com/assets/schrodinger-schrodingerkitty",
+            "text": "Cargo"
+        },
+        {
+            "name": "ShibaHexPulse",
+            "Website": "https://shibahexpulse.com/",
+            "Twitter": "https://twitter.com/shibahexpulse",
+            "Telegram": "https://t.me/ShibaHexPulse"
+        },
+        {
+            "name": "Slate DAO",
+            "Website": "https://slatedao.com/",
+            "Twitter": "https://twitter.com/DaoSlate",
+            "Telegram": "https://t.me/slatedao",
+            "text": "A DAO for Cinema &amp; TV"
+        },
+        {
+            "name": "Snowball Network",
+            "Website": "https://snowball-pulse.netlify.app/",
+            "Telegram": "https://t.me/+WkvcXI8CFRMwYTUx",
+            "text": "First Daily ROI Platform On PulseChain"
+        },
+        {
+            "name": "Spacelauncher",
+            "Website": "https://spacelauncher.io/",
+            "Twitter": "https://twitter.com/spacelauncherio",
+            "Telegram": "https://t.me/Spacelauncherio",
+            "text": ""
+        },
+        {
+            "name": "SoundX",
+            "Website": "https://soundxtoken.com/",
+            "Twitter": "http://twitter.com/soundxtoken",
+            "text": ""
+        },
+        {
+            "name": "SwapZ \u2013 ",
+            "text": "Project currently has no website."
+        },
+        {
+            "name": "Team.Finance",
+            "Website": "https://www.team.finance/",
+            "Twitter": "https://twitter.com/teamfinance_",
+            "Telegram": "https://t.me/teamfinance_main",
+            "text": "Your all-in-one solution: Compatible with Ethereum, Polygon,  Binance Smart Chain, Algorand, Avalanche, PulseChain, Conflux & More!"
+        },
+        {
+            "name": "Terrapulse",
+            "Website": "https://www.terrapulse.xyz/",
+            "Twitter": "https://twitter.com/terrapulse_xyz",
+            "text": ""
+        },
+        {
+            "name": "Texan Token",
+            "Website": "https://texan.cc/",
+            "Twitter": "https://twitter.com/texan_token",
+            "Telegram": "https://t.me/texantoken",
+            "text": "The first endowment token on the blockchain. Coming to PulseChain soon!"
+        },
+        {
+            "name": "The Pulse Abides",
+            "Website": "https://www.thepulseabides.info/",
+            "Twitter": "https://twitter.com/the_pulseabides",
+            "Telegram": "https://t.me/ThePulseAbidesToken"
+        },
+        {
+            "name": "TrustSwap",
+            "Website": "https://trustswap.org/",
+            "Twitter": "https://twitter.com/TrustSwap",
+            "Current Price": "https://nomics.com/assets/trustswap-trustswap-token",
+            "text": "TrustSwap provides DeFi tools for token holders & businesses to buy, trade, create, and secure crypto assets including with confidence."
+        },
+        {
+            "name": "Wait",
+            "Website": "https://0xwait.com/",
+            "Twitter": "https://twitter.com/0xcoast",
+            "text": "WAIT is a cryptocurrency that can be free-claimed by PulseChain sacrificers (+others). $WAIT is an ERC-20 available on Ethereum and Pulse."
+        },
+        {
+            "name": "WinWin",
+            "Website": "https://www.winwin.finance/",
+            "Twitter": "https://twitter.com/winwindefi",
+            "Telegram": "https://t.me/winwindefi",
+            "text": ""
+        },
+        {
+            "name": "XPulse",
+            "text": "Project currently has no website."
+        }
+    ]
+}
