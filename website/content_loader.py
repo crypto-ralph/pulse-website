@@ -36,10 +36,14 @@ def load_content() -> tuple:
         return tuple()
 
     proj_list = [Project(
-                name=project['name'],
-                media={
-                    "website": project.get("Website"),
-                    "twitter": project.get("Twitter")},
-                description=project.get("description")
-            ) for project in data['projects']]
+        name=project['name'],
+        media={
+            "website": project.get("Website"),
+            "twitter": project.get("Twitter"),
+            "telegram": project.get("Telegram")
+        },
+        description=project.get("description") if project.get("description") else project.get(
+            "text"),
+        contract=project.get("contract")
+    ) for project in data['projects']]
     return tuple(proj_list)

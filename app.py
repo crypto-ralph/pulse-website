@@ -1,11 +1,10 @@
-import os
-
-from flask import render_template, request, url_for
+from flask import render_template, request
 
 from website import create_app
 from website.content_loader import load_content
 
 app = create_app()
+
 
 @app.get("/")
 def index():
@@ -23,9 +22,9 @@ def index():
             "text": "PulseX",
         },
         {
-            "link": "Template",
-            "img": "pulse_twitt.png",
-            "text": "Template",
+            "link": "https://twitter.com/RichardHeartWin",
+            "img": "richard_twitt.png",
+            "text": "Richard Heart",
         },
         {
             "link": "Template",
@@ -47,6 +46,7 @@ def index():
     return render_template(
         "index.html",
         projects=projects[beg_proj:end_proj],
+        num_of_projects=num_of_projects,
         num_of_pages=num_of_pages,
         media_links=medias
     )
