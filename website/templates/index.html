@@ -101,12 +101,6 @@
                 <div class="stats-row">
                     <p class="description">Projects listed: <span style="color: black">{{ num_of_projects }}</span>&emsp;Projects
                         per page: <a>10</a> <a>20</a> <a>30</a>&emsp;&emsp;
-                    <div class="text-right col-lg-12">
-                        <form class="form-inline">
-                            <label class="sr-only" for="inlineFormInputName2">Name</label>
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
-                                   placeholder="Jane Doe"></form>
-                    </div>
                     </p>
                 </div>
                 {% for project in projects %}
@@ -164,6 +158,12 @@
                 </nav>
             </div>
             <div class="col-lg-3 col-md-3">
+                <div class="right-block">
+                    <form class="form-inline" method="POST">
+                        <input name="search_phrase" type="text" class="form-control mb-2 mr-sm-2"
+                               placeholder="find project">
+                    </form>
+                </div>
                 <div class="right-block">
                     <div class="n-m">Official Media</div>
                     {% for media in media_links %}

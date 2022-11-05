@@ -1,15 +1,24 @@
 import json
 import os
 
-from flask import url_for
 from werkzeug.routing import BuildError
 
 
 class Project:
-    def __init__(self, name: str, media: dict, description: str, contract: str = None):
+    def __init__(
+            self,
+            name: str,
+            media: dict,
+            description: str,
+            contract: str,
+            is_hot: bool,
+            contract_chain: str
+    ):
         self.name = name
         self.media = media
         self.description = description
+        self.is_hot = is_hot
+        self.contract_chain = contract_chain
 
         logo = f"{name}.png"
         if os.path.exists(f'website/static/proj_img/{logo}'):
@@ -23,7 +32,7 @@ class Project:
 
 def load_content() -> tuple:
     try:
-        path = url_for('static', filename='data/projects.json')
+        path = 'static/data/projects.json'
     except BuildError as e:
         print(e)
         return tuple()
@@ -44,6 +53,8 @@ def load_content() -> tuple:
         },
         description=project.get("description") if project.get("description") else project.get(
             "text"),
-        contract=project.get("contract")
+        contract=project.get("contract"),
+        contract_chain=project.get("contract_chain"),
+        is_hot=project.get("is_hot")
     ) for project in data['projects']]
     return tuple(proj_list)

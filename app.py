@@ -4,12 +4,21 @@ from website import create_app
 from website.content_loader import load_content
 
 app = create_app()
+projects = load_content()
 
 
-@app.get("/")
+@app.route("/", methods=['GET', 'POST'])
 def index():
+    global projects
+    result = None
+    request_data = request.form.get('search_phrase')
+    if request.method == 'POST' and request_data is not None:
+        result = [project for project in projects if
+                  request_data.lower() in project.name.lower()]
+
+    found_projects = result if result is not None else projects
+
     posts_per_page = 10
-    projects = load_content()
     medias = [
         {
             "link": "https://twitter.com/pulsechaincom",
@@ -35,7 +44,7 @@ def index():
 
     page = request.args.get("page")
     page = int(page) if page and page.isdigit() else 1
-    num_of_projects = len(projects)
+    num_of_projects = len(found_projects)
     num_of_pages = num_of_projects // posts_per_page
     if num_of_projects % posts_per_page != 0:
         num_of_pages += 1
@@ -45,8 +54,8 @@ def index():
 
     return render_template(
         "index.html",
-        projects=projects[beg_proj:end_proj],
-        num_of_projects=num_of_projects,
+        projects=found_projects[beg_proj:end_proj],
+        num_of_projects=len(projects),
         num_of_pages=num_of_pages,
         media_links=medias
     )
