@@ -49,7 +49,8 @@ def load_content() -> tuple:
         media={
             "website": project.get("Website"),
             "twitter": project.get("Twitter"),
-            "telegram": project.get("Telegram")
+            "telegram": project.get("Telegram"),
+            "discord": project.get("discord"),
         },
         description=project.get("description") if project.get("description") else project.get(
             "text"),
