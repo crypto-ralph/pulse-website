@@ -25,10 +25,11 @@
 }
 
 span.img-ste1 {
-    /*background: url(/icons/img-ste1.png) no-repeat;*/
+    background: url(../img/logo.png) no-repeat;
     display: block;
-    width: 560px;
-    height: 420px;
+    margin-left: 15%;
+    width: 343px;
+    height: 330px;
     background-size: contain;
 }
 
@@ -78,15 +79,11 @@ a.btn-drop {
 a.block-s1 {
     width: 256px;
     height: 130px;
-    background: url('../img/block-1s.png') no-repeat;
+    background: url(../img/block-website.png) no-repeat;
     display: block;
     transition: .5s;
     margin-top: 100px;
     margin-bottom: -110px;
-}
-
-a.block-s1.p2 {
-    background: url('../img/block-2s.png') no-repeat;
     padding-right: 10px;
 }
 
@@ -117,7 +114,7 @@ a.block-s1:hover {
 
 img.proj_logo {
     float: left;
-    height: 100px;
+    width: 100px;
     margin-right: 10px;
 }
 
@@ -197,6 +194,28 @@ span.new-news {
     padding: 5px 0 15px 0;
 }
 
+.media-ico-project {
+    height: 27px;
+}
+
+.media-proj-ico {
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+    outline: none 0;
+    border-bottom: none;
+}
+
+.media-ico {
+    margin-right: 2%;
+    height: 36px;
+    width: 36px;
+}
+
+.media-proj-ico:hover {
+    text-decoration: none;
+}
+
 .media-item {
     font-size: 14px;
     color: #2e3338;
@@ -214,12 +233,6 @@ span.new-news {
 .media-item a:hover {
     text-decoration: none;
     color: #67717b;
-}
-
-.media-ico {
-    margin-right: 2%;
-    height: 36px;
-    width: 36px;
 }
 
 .media-item:after {
@@ -262,21 +275,6 @@ p.footer-text {
     margin-top: 25px;
 }
 
-/*span.corp-design:hover {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*span.corp-design {*/
-/*    width: 120px;*/
-/*    height: 50px;*/
-/*    background: url(https://i.imgur.com/QUp8M7S.png) no-repeat;*/
-/*    display: block;*/
-/*    float: right;*/
-/*    margin-top: 11px;*/
-/*    opacity: .4;*/
-/*    transition: .5s;*/
-/*}*/
-
 a.btn-drop:hover {
     box-shadow: 0 20px 45px 0 #ccd4e0;
     background: linear-gradient(to right, #ffb26b, #ff6a80);
@@ -307,4 +305,33 @@ p.desctop {
 
 :-moz-placeholder { /* Firefox 18- */
     color: #b7bcc2;
+}
+
+
+/*Cookie*/
+.cookie-bar-custom {
+    background-color: #fff;
+    box-shadow: 0 10px 65px 0 #dae0e8;
+
+}
+
+.cookie-text {
+    color: #9aa1a6;
+}
+
+.cookie-bar-wrapper {
+    bottom: 3%;
+    position: fixed;
+    right: 3%;
+    border-radius: 4px;
+    max-width: 15%;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.cookie-text {
+    font-size: 14px;
 }

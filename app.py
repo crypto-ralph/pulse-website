@@ -57,7 +57,8 @@ def index():
         projects=found_projects[beg_proj:end_proj],
         num_of_projects=len(projects),
         num_of_pages=num_of_pages,
-        media_links=medias
+        media_links=medias,
+        in_progress_flag=False,
     )
 
 

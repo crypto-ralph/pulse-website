@@ -12,13 +12,15 @@ class Project:
             description: str,
             contract: str,
             is_hot: bool,
-            contract_chain: str
+            contract_chain: str,
+            followers: str
     ):
         self.name = name
         self.media = media
-        self.description = description
+        self.description = description.replace('\n', '<br>') if description is not None else None
         self.is_hot = is_hot
         self.contract_chain = contract_chain
+        self.twitter_followers = followers
 
         logo = f"{name}.png"
         if os.path.exists(f'website/static/proj_img/{logo}'):
@@ -56,6 +58,7 @@ def load_content() -> tuple:
             "text"),
         contract=project.get("contract"),
         contract_chain=project.get("contract_chain"),
-        is_hot=project.get("is_hot")
+        is_hot=project.get("is_hot"),
+        followers=project.get("twitter_followers")
     ) for project in data['projects']]
     return tuple(proj_list)

@@ -12,8 +12,6 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='icons/icomoon.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='icons/fontawesome-all.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/pluginsx.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -33,7 +31,6 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" data-hash="slide1">
                                 <div class="col-md-6">
-                                    <!-- Image placeholder -->
                                     <span class="img-ste1"></span>
                                 </div>
                                 <div class="col-md-6">
@@ -46,23 +43,23 @@
                             </div>
                             <div class="swiper-slide" data-hash="slide2">
                                 <div class="col-md-6">
-                                    <!-- Image placeholder -->
-                                    <span class="img-ste1"></span>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="name-intro">PUBG</h3>
+                                    <h3 class="name-intro">WE ARE <br>LISTING</h3>
                                     <span class="hr-intro"></span>
                                     <p class="docopation-intro">
-                                        Встречайте новая мини-игра <br>
-                                        PUBG теперь и в майнкрафте.
+                                        It's free! <br>
+                                        Over 60 projects listed already.
                                     </p>
-                                    <a href="#" class="btn-drop"><span class="ic-sx22"></span>Visit</a>
+                                    <a href="mailto: pulseprojects@mail.com" class="btn-drop"><span
+                                            class="btn-carousel btn-carousel-mailto"></span>Contact
+                                        Us!</a>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-hash="slide3">
                                 <!-- Image placeholder -->
                                 <div class="col-md-6">
-                                    <span class="img-ste1"></span>
+                                    {#                                    <span class="img-ste1"></span>#}
                                 </div>
                                 <div class="col-md-6">
                                     <h2 class="name-intro">PulseX Sacrifice Check</h2>
@@ -71,7 +68,7 @@
                                         Check if you're eliglible to get tokens on pulsexlead.
                                     </p>
                                     <a href="https://pulsexlead.com/" target="_blank" class="btn-drop"><span
-                                            class="ic-sx22"></span>pulsexlead.com</a>
+                                            class="btn-carousel btn-carousel-visit"></span>pulsexlead.com</a>
                                 </div>
                             </div>
                         </div>
@@ -99,38 +96,66 @@
         <div class="row">
             <div class="col-lg-9 col-md-9">
                 <div class="stats-row">
-                    <p class="description">Projects listed: <span style="color: black">{{ num_of_projects }}</span>&emsp;Projects
-                        per page: <a>10</a> <a>20</a> <a>30</a>&emsp;&emsp;
+                    <p class="description">Projects listed: <span style="color: black">{{ num_of_projects }}</span>
+                        {% if in_progress_flag %}
+                            Projects per page: <a href="p=10">10</a> <a href="#?p=20">20</a> <a href="#?p=30">30</a>
+                        {% endif %}
                     </p>
                 </div>
                 {% for project in projects %}
-                    <div class="project">
-                        {% if project.logo %}
-                            <img class="proj_logo" src="{{ url_for('static', filename='proj_img/') }}{{ project.logo }}"
-                                 alt=""/>
-                        {% endif %}
-                        {% if project.is_hot %}
-                            <span class="hot-project">HOT</span>
-                        {% endif %}
-                        <h3 class="news-log">{{ project.name }}</h3>
-                        <p class="description">
-                            {{ project.description }} <br>
-                        </p>
-                        <b><span style="color: black">contract:</span></b> {{ project.contract }} <br><br>
-                        <span style="color: black">Media:</span><br>
+                <div class="project">
+                    {% if project.logo %}
+                        <img class="proj_logo" src="{{ url_for('static', filename='proj_img/') }}{{ project.logo }}"
+                             alt=""/>
+                    {% endif %}
+                    {% if project.is_hot %}
+                        <span class="hot-project">HOT</span>
+                    {% endif %}
+                    <h3 class="news-log">{{ project.name }}
                         {% if project.media.website %}
-                            <a href="{{ project.media.website }}" target="_blank">website</a>
+                            <a class="media-proj-ico" href="{{ project.media.website }}" target="_blank">
+                                <img class="media-ico-project"
+                                     src="{{ url_for('static', filename='icons/website.png') }}"
+                                     alt="website">
+                            </a>
                         {% endif %}
                         {% if project.media.twitter %}
-                            |  <a href="{{ project.media.twitter }}" target="_blank">twitter</a>
+                            <a class="media-proj-ico" href="https://twitter.com/{{ project.media.twitter }}"
+                               target="_blank">
+                                <img class="media-ico-project"
+                                     src="{{ url_for('static', filename='icons/twitter.png') }}"
+                                     alt="twitter">
+                            </a>
                         {% endif %}
                         {% if project.media.telegram %}
-                            |  <a href="{{ project.media.telegram }}" target="_blank">telegram</a>
+                            <a class="media-proj-ico" href="{{ project.media.telegram }}" target="_blank">
+                                <img class="media-ico-project"
+                                     src="{{ url_for('static', filename='icons/telegram.png') }}"
+                                     alt="telegram">
+                            </a>
                         {% endif %}
                         {% if project.media.discord %}
-                            |  <a href="{{ project.media.discord }}" target="_blank">discord</a>
+                            <a class="media-proj-ico" href="{{ project.media.discord }}" target="_blank">
+                                <img class="media-ico-project"
+                                     src="{{ url_for('static', filename='icons/discord.png') }}"
+                                     alt="discord">
+                            </a>
                         {% endif %}
-                    </div>
+                    </h3>
+
+                    <p class="description">
+                        {% autoescape false %}
+                        {{ project.description }} <br>
+                        {% endautoescape %}
+                    </p>
+                    <b><span style="color: black">contract:</span></b> {{ project.contract }} <br>
+                    <b><span style="color: black">twitter followers:</span></b>
+                    {% if project.twitter_followers %}
+                        {{ project.twitter_followers }}
+                    {% else %}
+                        --
+                    {% endif %}<br><br>
+                </div>
                 {% endfor %}
 
                 <nav aria-label="Page navigation example">
@@ -169,19 +194,22 @@
                     {% for media in media_links %}
                         <div class="media-item">
                             <a href="{{ media.link }}" target="_blank">
-                                <img class="media-ico" src="{{ url_for('static', filename='icons/') }}{{ media.img }}"
+                                <img class="media-ico"
+                                     src="{{ url_for('static', filename='icons/') }}{{ media.img }}"
                                      alt="">
                                 {{ media.text }}
                             </a>
                         </div>
                     {% endfor %}
                 </div>
-                <div class="right-block vk">
-                    <div class="n-m">Exchange Links</div>
-                    <div class="widget-vk">
-                        WIDGET VK
+                {% if in_progress_flag %}
+                    <div class="right-block vk">
+                        <div class="n-m">Exchange Links</div>
+                        <div class="widget-vk">
+                            WIDGET VK
+                        </div>
                     </div>
-                </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -208,6 +236,22 @@
     </footer>
     <!-- Footer END -->
 </div>
+
+<div class="col-md-4 col-sm-12  cookie-bar-wrapper" id="cookie-bar">
+    <div class="p-3 pb-4 cookie-bar-custom text-white">
+        <div class="row">
+            <div class="col-10">
+                <h2 class="cookie-text">Allow Cookies</h2>
+            </div>
+            <div class="col-2 text-center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <p class="cookie-text">By using our site you agree to our use of cookies to give you the best experience on our
+            website.</p>
+        <button type="button" class="btn btn-danger w-100" id="cookie-btn">Accept Cookies</button>
+    </div>
+</div>
 <!-- Page Content END -->
 
 <script src="{{ url_for('static', filename='dist/js/swiper.min.js') }}"></script>
@@ -232,5 +276,6 @@
 <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/pluginsx.js') }}"></script>
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/cookieBar.js') }}"></script>
 </body>
 </html>
