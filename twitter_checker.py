@@ -1,5 +1,3 @@
-import json
-
 import requests
 
 from data_manipulation import load_projects_json, save_projects_json
@@ -61,10 +59,9 @@ def main():
 
     url = create_url(users_string)
     json_response = connect_to_endpoint(url)
-    print(json.dumps(json_response, indent=4, sort_keys=True))
+    # print(json.dumps(json_response, indent=4, sort_keys=True))
 
     for project in projects["projects"]:
-        print(project["name"].lower())
         proj_twitter = project.get("Twitter")
         if proj_twitter is not None:
             for response in json_response["data"]:
@@ -72,8 +69,8 @@ def main():
                 # print(project["name"])
 
                 if response["username"].lower() == project["Twitter"].lower():
-                    print(response["username"])
-                    print(project["name"])
+                    if project["twitter_followers"] is not None:
+                        project["twitter_followers_prev"] = project["twitter_followers"]
                     project["twitter_followers"] = response["public_metrics"]["followers_count"]
 
     save_projects_json(projects, "new")

@@ -7,6 +7,10 @@ app = create_app()
 projects = load_content()
 
 
+def is_hot(elem):
+    return 1 if elem.is_hot else 0
+
+
 @app.route("/", methods=['GET', 'POST'])
 def index():
     global projects
@@ -17,6 +21,8 @@ def index():
                   request_data.lower() in project.name.lower()]
 
     found_projects = result if result is not None else projects
+
+    found_projects.sort(key=is_hot, reverse=True)
 
     posts_per_page = 10
     medias = [

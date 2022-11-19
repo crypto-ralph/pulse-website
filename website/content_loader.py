@@ -32,19 +32,19 @@ class Project:
         return self.name
 
 
-def load_content() -> tuple:
+def load_content() -> list:
     try:
         path = 'static/data/projects.json'
     except BuildError as e:
         print(e)
-        return tuple()
+        return list()
 
     try:
         with open(f'website/{path}', 'r') as file:
             data = json.load(file)
     except FileNotFoundError as e:
         print(f"Error: {e}")
-        return tuple()
+        return list()
 
     proj_list = [Project(
         name=project['name'],
@@ -61,4 +61,4 @@ def load_content() -> tuple:
         is_hot=project.get("is_hot"),
         followers=project.get("twitter_followers")
     ) for project in data['projects']]
-    return tuple(proj_list)
+    return proj_list

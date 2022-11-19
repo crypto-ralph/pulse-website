@@ -151,7 +151,13 @@
                     <b><span style="color: black">contract:</span></b> {{ project.contract }} <br>
                     <b><span style="color: black">twitter followers:</span></b>
                     {% if project.twitter_followers %}
-                        {{ project.twitter_followers }}
+                        {% if project.twitter_followers | int < 2000 %}
+                            <span style="color: red">
+                        {% else %}
+                            <span style="color: green">
+                        {% endif %}
+                    {{ project.twitter_followers }}
+                    </span>
                     {% else %}
                         --
                     {% endif %}<br><br>
