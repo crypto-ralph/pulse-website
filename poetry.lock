@@ -82,6 +82,20 @@ Flask = ">=0.9"
 Six = "*"
 
 [[package]]
+name = "gunicorn"
+version = "20.1.0"
+description = "WSGI HTTP Server for UNIX"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+eventlet = ["eventlet (>=0.24.1)"]
+gevent = ["gevent (>=1.4.0)"]
+setproctitle = ["setproctitle"]
+tornado = ["tornado (>=0.2)"]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -211,7 +225,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "37c902aea799209d0c0d38c69aabf70ddcac40854a48420e4d1f6be984ad9763"
+content-hash = "c6b8a1665c6b5729210da1d4bb05bd6036abde500c57a6c34655292505c3e7f0"
 
 [metadata.files]
 beautifulsoup4 = []
@@ -227,6 +241,7 @@ colorama = [
 ]
 flask = []
 flask-cors = []
+gunicorn = []
 idna = []
 itsdangerous = []
 jinja2 = []
