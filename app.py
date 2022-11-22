@@ -41,11 +41,6 @@ def index():
             "img": "richard_twitt.png",
             "text": "Richard Heart",
         },
-        {
-            "link": "Template",
-            "img": "pulse_twitt.png",
-            "text": "Template",
-        },
     ]
 
     page = request.args.get("page")
