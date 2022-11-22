@@ -106,8 +106,10 @@
                 {% for project in projects %}
                 <div class="project">
                     {% if project.logo %}
-                        <img class="proj_logo" src="{{ url_for('static', filename='proj_img/') }}{{ project.logo }}"
-                             alt=""/>
+                        <a href="{{ project.media.website }}" target="_blank">
+                            <img class="proj_logo" src="{{ url_for('static', filename='proj_img/') }}{{ project.logo }}"
+                                 alt=""/>
+                        </a>
                     {% endif %}
                     {% if project.is_hot %}
                         <span class="hot-project">HOT</span>
