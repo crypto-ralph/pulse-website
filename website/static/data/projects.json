@@ -14,20 +14,6 @@
       "twitter_followers_prev": 5554
     },
     {
-      "name": "AirDAO",
-      "Website": "https://airdao.app/",
-      "Twitter": "pulseairdao",
-      "Telegram": "https://t.me/+yE3vMwyR7T1mYTFk",
-      "description": "Pulse AirDAO is a black hole for carbon at the center of a new green economy. The DAO sells bonds and distributes rewards to AIR holders. Every bond we sell adds to an ever-growing green treasury, or improves liquidity for key environmental assets. A win-win for people and planet.",
-      "text": "Web site created using create-react-app",
-      "contract": null,
-      "contract_chain": null,
-      "is_hot": false,
-      "personal_mark": false,
-      "twitter_followers": 81,
-      "twitter_followers_prev": 81
-    },
-    {
       "name": "ArkKit",
       "Website": "https://artkit.art/",
       "Twitter": "artkit_art",
