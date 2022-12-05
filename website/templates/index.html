@@ -224,10 +224,17 @@
                 </div>
                 {% if in_progress_flag %}
                     <div class="right-block vk">
-                        <div class="n-m">Exchange Links</div>
-                        <div class="widget-vk">
-                            WIDGET VK
-                        </div>
+                        <div class="n-m">Hex OGs</div>
+                        {% for media in hex_ogs %}
+                            <div class="media-item">
+                                <a href="{{ media.link }}" target="_blank">
+                                    <img class="media-ico"
+                                         src="{{ url_for('static', filename='icons/') }}{{ media.img }}"
+                                         alt="">
+                                    {{ media.text }}
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
                 {% endif %}
             </div>
@@ -245,7 +252,8 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="ft-nav social-nav my-3">
-                        <li class="mx-1"><a href="" title="twitter"><i class="fa fa-twitter"></i></a>
+                        <li class="mx-1"><a href="https://twitter.com/pulseinfosite" title="twitter"><i
+                                class="fa fa-twitter"></i></a>
                         </li>
                         <li class="mx-1"><a href="" title="instagram"><i class="fa fa-instagram"></i></a>
                         </li>
@@ -291,6 +299,18 @@
             prevEl: '.swiper-button-prev',
         },
     });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5KE9T3Q27"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-F5KE9T3Q27');
 </script>
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
