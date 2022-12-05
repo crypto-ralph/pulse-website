@@ -33,6 +33,26 @@ span.img-ste1 {
     background-size: contain;
 }
 
+span.img-ste2 {
+    background: url(../img/listing.png) no-repeat;
+    display: block;
+    margin-left: 15%;
+    width: 343px;
+    height: 330px;
+    background-size: contain;
+}
+
+
+span.img-ste3 {
+    background: url(../img/pulsex_carousel.png) no-repeat;
+    display: block;
+    margin-left: 15%;
+    width: 343px;
+    height: 330px;
+    background-size: contain;
+}
+
+
 h3.name-intro {
     font-size: 74px;
     color: #2e3338;

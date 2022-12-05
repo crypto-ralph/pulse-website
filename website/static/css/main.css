@@ -708,122 +708,6 @@ h1, .h1 {
     border-bottom: 3px solid #4a82e4;
 }
 
-.go-top,
-.banner-sub-title:before,
-.btn-primary,
-.pagination-bullet-active,
-.form-element-bar::after,
-.site-footer .social-nav a:hover,
-.site-footer .social-nav a:focus,
-.primary-overlay:after,
-.filters-list li:hover,
-.filters-list .current,
-.page-link:hover,
-.page-link:focus,
-.prev-next i:after,
-.share-list li a:hover {
-    background-color: #4a82e4;
-}
-
-.bg-primary,
-.service:hover i {
-    background-color: #5658db !important;
-}
-
-.bg-darker {
-    background-color: #2f353a !important;
-}
-
-.form-control.error {
-    color: #db5656;
-}
-
-.form-control.valid {
-    color: #45c97a;
-}
-
-.btn-primary,
-.filters-list li:hover,
-.filters-list .current,
-.page-link:hover,
-.page-link:focus {
-    border-color: #5658db;
-}
-
-.btn-light {
-    background-color: #fff;
-}
-
-.btn-primary.btn-fancy {
-    box-shadow: 0 3px 5px rgba(86, 88, 219, .35);
-}
-
-.service:hover i,
-.filters-list li:hover,
-.filters-list .current,
-.page-link:hover,
-.page-link:focus {
-    box-shadow: 0 30px 90px rgba(86, 88, 219, .35);
-}
-
-.text-opac {
-    color: #000;
-}
-
-.service:hover > i:before,
-.parallax .text-opac,
-.share-list li a:hover {
-    color: #fff;
-}
-
-.text-opac {
-    opacity: .65;
-}
-
-.bg-primary .btn-primary {
-    border-color: #fff;
-    background-color: #fff;
-    color: #5658db;
-    box-shadow: none;
-}
-
-.btn-line,
-.bg-primary .btn-line {
-    background-color: transparent;
-    border-color: rgba(0, 0, 0, .1);
-    color: #292a2d;
-    box-shadow: none;
-}
-
-.btn-line.light {
-    border-color: rgba(255, 255, 255, .2);
-    color: #fff;
-}
-
-.btn-line:hover,
-.btn-line:focus,
-.dark-layout .btn-line:hover,
-.dark-layout .btn-line:focus,
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active {
-    border-color: #5658db;
-    background-color: #5658db;
-    color: #fff;
-    box-shadow: 0 30px 90px rgba(86, 88, 219, .35);
-}
-
-.bg-primary .btn-line:hover,
-.bg-primary .btn-line:focus {
-    border-color: #fff;
-    background-color: #fff;
-    color: #5658db;
-    box-shadow: none;
-}
-
-.text-gray {
-    color: #a6a6ad !important;
-}
-
 .btn-primary.btn-fancy:hover,
 .btn-primary.btn-fancy:focus,
 .btn-primary.btn-fancy:not(:disabled):not(.disabled):active {
@@ -840,10 +724,6 @@ h1, .h1 {
 .btn-light.btn-fancy:hover {
     background-color: #fff;
     box-shadow: 0 30px 90px rgba(0, 0, 0, .35);
-}
-
-.text-primary {
-    color: #5658db !important;
 }
 
 .btn:not(:disabled):not(.disabled).active,
