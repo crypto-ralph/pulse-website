@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  pulseinfo-flask:
+    container_name: pulseinfo-flask
+    build: .
+    # command: flask run -h 0.0.0.0
+    command: gunicorn app:app --bind 0.0.0.0:5000
+    networks:
+      - pulse-network
+    ports:
+      - "5000:5000"
+
+  nginx:
+    container_name: nginx
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    networks:
+      - pulse-network
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - "pulseinfo-flask"
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+  certbot:
+    image: certbot/certbot
+    restart: unless-stopped
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+networks:
+  pulse-network:
