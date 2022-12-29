@@ -1,4 +1,4 @@
 .idea
 __pycache__
 certbot
-website/__pycache__/*
+website/__pycache__
