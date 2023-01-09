@@ -26,9 +26,7 @@ let cookieBar = function (options) {
 
     // Check if cookie has been accepted
     window.onload = function () {
-        console.log(getCookie("cc-bar-cookies"))
         if (getCookie("cc-bar-cookies") != "accepted") {
-            console.log("jestem tu")
             cookie_bar.style.display = "flex";
         } else {
             cookie_bar.style.display = "none";

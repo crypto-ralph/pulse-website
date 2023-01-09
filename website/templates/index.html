@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/pluginsx.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/swiper.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
 <!-- Page Content START -->
@@ -152,7 +152,19 @@
                         {{ project.description }} <br>
                         {% endautoescape %}
                     </p>
-                    <b><span style="color: black">contract:</span></b> {{ project.contract }} <br>
+                    <b><span style="color: black">contract:</span></b>
+                    {% if project.contract %}
+                        <a href="{{ project.explorer_link }}" target="_blank">{{ project.contract }}</a>
+                    {% else %} No contract adress
+                    {% endif %}
+                    {% if project.contract_chain %}
+                        <img class="chain_img"
+                             src="{{ url_for('static', filename='chain_img/') }}{{ project.contract_chain }}.png"
+                             alt="">
+                        {% if project.contract_chain == "PLS_testnet" %} [testnet]
+                        {% endif %}
+                    {% endif %}
+                    <br>
                     <b><span style="color: black">twitter followers:</span></b>
                     {% if project.twitter_followers %}
                         {% if project.twitter_followers | int < 2000 %}
@@ -168,45 +180,76 @@
                 </div>
                 {% endfor %}
 
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        {% if request.args.get('page') not in ('1', None) %}
-                            <li class="page-item">
-                                <a class="page-link" href="?page={{ request.args.get('page') | int - 1 }}"
-                                   aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% for n in range(num_of_pages) %}
-                            <li class="page-item"><a class="page-link" href="?page={{ n + 1 }}">{{ n + 1 }}</a></li>
-                        {% endfor %}
-                        {% if request.args.get('page') != num_of_pages|string %}
-                            <li class="page-item">
-                                {% if request.args.get('page') is none %}
-                                    <a class="page-link" href="?page=2"
-                                       aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
+                {% if num_of_pages > 1 and paginate %}
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            {% if request.args.get('page') not in ('1', None) %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ request.args.get('page') | int - 1 }}"
+                                       aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
                                     </a>
-                                {% else %}
-                                    <a class="page-link" href="?page={{ request.args.get('page') | int + 1 }}"
-                                       aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                {% endif %}
-                            </li>
-                        {% endif %}
-                    </ul>
-                </nav>
+                                </li>
+                            {% endif %}
+                            {% for n in range(num_of_pages) %}
+                                <li class="page-item"><a class="page-link" href="?page={{ n + 1 }}">{{ n + 1 }}</a></li>
+                            {% endfor %}
+                            {% if request.args.get('page') != num_of_pages|string %}
+                                <li class="page-item">
+                                    {% if request.args.get('page') is none %}
+                                        <a class="page-link" href="?page=2"
+                                           aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    {% else %}
+                                        <a class="page-link" href="?page={{ request.args.get('page') | int + 1 }}"
+                                           aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    {% endif %}
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                {% endif %}
             </div>
             <div class="col-lg-3 col-md-3">
                 <div class="right-block">
-                    <form class="form-inline" method="POST">
-                        <input name="search_phrase" type="text" class="form-control mb-2 mr-sm-2"
-                               placeholder="find project">
+                    <form method="POST">
+                        <div class="mb-3">
+                            <input name="search_phrase" type="text" class="form-control mb-2 mr-sm-2"
+                                   placeholder="{{ site_params.search_phrase }}">
+                        </div>
+                        <div class="mb-3">
+                            <select id="sorting" class="form-select" name="sorting">
+                                <option {% if site_params.sorting=="A-Z" %} selected {% endif %}>A-Z</option>
+                                <option {% if site_params.sorting=="Z-A" %} selected {% endif %}>Z-A</option>
+                                <option {% if site_params.sorting=="Twitter desc" %} selected {% endif %}>Twitter desc
+                                </option>
+                                <option {% if site_params.sorting=="Twitter asc" %} selected {% endif %}>Twitter asc
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="hot_only"
+                                    {% if site_params.hot_only %} checked {% endif %}>
+                            <label class="form-check-label" for="hot_only">
+                                HOT only
+                            </label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="has_contract"
+                                    {% if site_params.has_contract %} checked {% endif %}>
+                            <label class="form-check-label" for="has_contract">
+                                With Contract
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">filter</button>
+                        </div>
                     </form>
                 </div>
                 <div class="right-block">

@@ -355,3 +355,7 @@ p.desctop {
 .cookie-text {
     font-size: 14px;
 }
+
+.form-check-input {
+    accent-color: #fa8819;
+}

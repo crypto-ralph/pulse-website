@@ -3,6 +3,12 @@ import os
 
 from werkzeug.routing import BuildError
 
+explorers = {
+    "ETH": "https://etherscan.io/token",
+    "BSC": "https://bscscan.com/token",
+    "PLS_testnet": "https://scan.v2b.testnet.pulsechain.com/token",
+}
+
 
 class Project:
     def __init__(
@@ -19,14 +25,18 @@ class Project:
         self.media = media
         self.description = description.replace('\n', '<br>') if description is not None else None
         self.is_hot = is_hot
-        self.contract_chain = contract_chain
         self.twitter_followers = followers
 
         logo = f"{name}.png"
         if os.path.exists(f'website/static/proj_img/{logo}'):
             self.logo = logo
 
-        self.contract = contract if contract else "Currently no contract adress"
+        self.contract = contract if contract else None
+        self.contract_chain = contract_chain
+        if self.contract is not None and self.contract_chain is not None:
+            self.explorer_link = f"{explorers[self.contract_chain]}/{self.contract}"
+        else:
+            self.explorer_link = None
 
     def __str__(self):
         return self.name

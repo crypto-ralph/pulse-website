@@ -7,24 +7,68 @@ app = create_app()
 projects = load_content()
 
 
-def is_hot(elem):
-    return 1 if elem.is_hot else 0
-
-
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=["GET", "POST"])
 def index():
     global projects
-    result = None
-    request_data = request.form.get('search_phrase')
-    if request.method == 'POST' and request_data is not None:
-        result = [project for project in projects if
-                  request_data.lower() in project.name.lower()]
+    results = None
+    site_params = {
+        "hot_only": False,
+        "has_contract": False,
+        "search_phrase": "find project",
+        "sorting": "A-Z",
+    }
+    num_of_pages = 0
 
-    found_projects = result if result is not None else projects
+    if request.method == "POST":
+        search_phrase = request.form.get("search_phrase")
 
-    found_projects.sort(key=is_hot, reverse=True)
+        if search_phrase != "":
+            results = [
+                project for project in projects if search_phrase.lower() in project.name.lower()
+            ]
+        else:
+            results = projects
+        site_params["search_phrase"] = search_phrase if search_phrase != "" else "find project"
+
+        if "hot_only" in request.form:
+            results = [project for project in results if project.is_hot]
+            site_params["hot_only"] = True
+
+        if "has_contract" in request.form:
+            results = [
+                project for project in results if project.contract
+            ]
+            site_params["has_contract"] = True
+
+        if request.form.get("sorting") == "Z-A":
+            results.sort(reverse=True)
+            site_params["sorting"] = "Z-A"
+        elif request.form.get("sorting") == "Twitter desc":
+            results = [project for project in results if project.twitter_followers is not None]
+            results.sort(key=lambda x: int(x.twitter_followers), reverse=True)
+            site_params["sorting"] = "Twitter desc"
+        elif request.form.get("sorting") == "Twitter asc":
+            results = [project for project in results if project.twitter_followers is not None]
+            results.sort(key=lambda x: int(x.twitter_followers))
+            site_params["sorting"] = "Twitter asc"
+
+    found_projects = results if results is not None else projects
 
     posts_per_page = 10
+
+    # paginate
+    if request.method == "GET":
+        page = request.args.get("page")
+        page = int(page) if page and page.isdigit() else 1
+        num_of_projects = len(found_projects)
+        num_of_pages = num_of_projects // posts_per_page
+        if num_of_projects % posts_per_page != 0:
+            num_of_pages += 1
+
+        end_proj = page * posts_per_page
+        beg_proj = end_proj - posts_per_page
+        found_projects = found_projects[beg_proj:end_proj]
+
     medias = [
         {
             "link": "https://twitter.com/pulsechaincom",
@@ -43,25 +87,17 @@ def index():
         },
     ]
 
-    page = request.args.get("page")
-    page = int(page) if page and page.isdigit() else 1
-    num_of_projects = len(found_projects)
-    num_of_pages = num_of_projects // posts_per_page
-    if num_of_projects % posts_per_page != 0:
-        num_of_pages += 1
-
-    end_proj = page * posts_per_page
-    beg_proj = end_proj - posts_per_page
-
     return render_template(
         "index.html",
-        projects=found_projects[beg_proj:end_proj],
+        projects=found_projects,
         num_of_projects=len(projects),
         num_of_pages=num_of_pages,
         media_links=medias,
         in_progress_flag=False,
+        site_params=site_params,
+        paginate=True if request.method == "GET" else False,
     )
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
